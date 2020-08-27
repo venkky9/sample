@@ -79,7 +79,7 @@ tomcatUsername: user
 ## Admin password
 ## ref: https://github.com/bitnami/bitnami-docker-tomcat#creating-a-custom-user
 ##
-tomcatPassword: 123456789
+# tomcatPassword: 
 
 ## Expose management services
 ## ref: https://github.com/bitnami/charts/tree/master/bitnami/tomcat#configuration
@@ -168,7 +168,7 @@ persistence:
 service:
   ## Service type
   ##
-  type: LoadBalancer
+  type: NodePort
   ## HTTP port
   ##
   port: 80
