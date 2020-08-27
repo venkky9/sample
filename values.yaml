@@ -79,7 +79,7 @@ tomcatUsername: user
 ## Admin password
 ## ref: https://github.com/bitnami/bitnami-docker-tomcat#creating-a-custom-user
 ##
-# tomcatPassword:
+tomcatPassword: 123456789
 
 ## Expose management services
 ## ref: https://github.com/bitnami/charts/tree/master/bitnami/tomcat#configuration
@@ -140,7 +140,7 @@ resources:
 persistence:
   ## If true, use a Persistent Volume Claim, If false, use emptyDir
   ##
-  enabled: true
+  enabled: false
   ## Persistent Volume Storage Class
   ## If defined, storageClassName: <storageClass>
   ## If set to "-", storageClassName: "", which disables dynamic provisioning
@@ -168,7 +168,7 @@ persistence:
 service:
   ## Service type
   ##
-  type: LoadBalancer
+  type: NodePort
   ## HTTP port
   ##
   port: 80
