@@ -4,9 +4,9 @@
 ##
 # global:
    imageRegistry: madhavi0891
-#   imagePullSecrets:
-#     - venky@2491
-#   storageClass: myStorageClass
+   imagePullSecrets: venky@2491
+    - myRegistryKeySecretName
+   storageClass: myStorageClass
 
 ## Bitnami Tomcat image version
 ## ref: https://hub.docker.com/r/bitnami/tomcat/tags/
