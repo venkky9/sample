@@ -18,7 +18,7 @@ spec:
     annotations: {{- toYaml .Values.podAnnotations | nindent 8 }}
     {{- end }}
     spec:
-{{- include "tomcat.imagePullSecrets" . | indent 6 }}
+{{- include "tomcat.imagePullSecrets" . | nindent 6 }}
       {{- if .Values.affinity }}
       affinity: {{- include "tomcat.tplValue" (dict "value" .Values.affinity "context" $) | nindent 8 }}
       {{- end }}
