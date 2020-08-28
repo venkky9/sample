@@ -1,6 +1,6 @@
 FROM tomcat:8.0-alpine
 
-LABEL maintainer="deepak@softwareyoga.com"
+LABEL maintainer="madhavi.reddy0891@gmail.com"
 
 ADD jenkins.war /usr/local/tomcat/webapps/
 
