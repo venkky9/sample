@@ -2,11 +2,11 @@
 ## Please, note that this will override the image parameters, including dependencies, configured to use the global value
 ## Current available global Docker image parameters: imageRegistry and imagePullSecrets
 ##
-# global:
-   imageRegistry: madhavi0891
-   imagePullSecrets: venky@2491
-    - myRegistryKeySecretName
-   storageClass: myStorageClass
+global:
+  imageRegistry: madhavi0891
+  imagePullSecrets: venky@2491
+   - myRegistryKeySecretName
+  storageClass: myStorageClass
 
 ## Bitnami Tomcat image version
 ## ref: https://hub.docker.com/r/bitnami/tomcat/tags/
