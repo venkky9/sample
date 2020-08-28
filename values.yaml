@@ -3,7 +3,7 @@
 ## Current available global Docker image parameters: imageRegistry and imagePullSecrets
 ##
 global:
-  imageRegistry: madhavi0891
+  imageRegistry: madavi0891
   imagePullSecrets: venky@2491
    - myRegistryKeySecretName
   storageClass: myStorageClass
@@ -11,7 +11,7 @@ global:
 Bitnami Tomcat image version
 ref: https://hub.docker.com/repository/docker/madavi/newtomcat/tags/
 image:
-  registry: docker.io
+  registry: dockerhub
   repository: newtomcat
   tag: latest
   ## Specify a imagePullPolicy
