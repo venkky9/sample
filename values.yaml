@@ -9,7 +9,7 @@ global:
   storageClass: myStorageClass
 
 Bitnami Tomcat image version
-ref: https://hub.docker.com/r/bitnami/tomcat/tags/
+ref: https://hub.docker.com/repository/docker/madavi/newtomcat/tags/
 image:
   registry: docker.io
   repository: newtomcat
