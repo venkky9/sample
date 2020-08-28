@@ -3,9 +3,9 @@
 ## Current available global Docker image parameters: imageRegistry and imagePullSecrets
 ##
 # global:
-#   imageRegistry: myRegistryName
+   imageRegistry: madhavi0891
 #   imagePullSecrets:
-#     - myRegistryKeySecretName
+#     - venky@2491
 #   storageClass: myStorageClass
 
 ## Bitnami Tomcat image version
@@ -13,7 +13,7 @@
 ##
 image:
   registry: docker.io
-  repository: nodeapp
+  repository: newtomcat
   tag: latest
   ## Specify a imagePullPolicy
   ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
