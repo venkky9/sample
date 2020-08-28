@@ -4,7 +4,7 @@
 ##
 global:
   imageRegistry: madavi0891
-  imagePullSecrets: venky@2491
+  imagePullSecrets: 
    - myRegistryKeySecretName
   storageClass: myStorageClass
 
