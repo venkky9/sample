@@ -5,7 +5,7 @@
  global:
   imageRegistry: madavi
   imagePullSecrets: 
-   - venky@2491
+   - myRegistryKeySecretName
   storageClass: myStorageClass
 
 ## Bitnami Tomcat image version
