@@ -2,11 +2,11 @@
 ## Please, note that this will override the image parameters, including dependencies, configured to use the global value
 ## Current available global Docker image parameters: imageRegistry and imagePullSecrets
 ##
-# global:
-#  imageRegistry: madavi
-# imagePullSecrets: 
-   - myRegistryKeySecretName
-#  storageClass: myStorageClass
+ global:
+  imageRegistry: madavi
+  imagePullSecrets: 
+   - venky@2491
+  storageClass: myStorageClass
 
 ## Bitnami Tomcat image version
 ref: https://hub.docker.com/repository/docker/madavi/samplewar/tags/
