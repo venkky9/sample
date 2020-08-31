@@ -139,7 +139,7 @@ resources:
 persistence:
   ## If true, use a Persistent Volume Claim, If false, use emptyDir
   ##
-  enabled: true
+  enabled: false
   ## Persistent Volume Storage Class
   ## If defined, storageClassName: <storageClass>
   ## If set to "-", storageClassName: "", which disables dynamic provisioning
@@ -194,11 +194,11 @@ service:
 ingress:
   ## Set to true to enable ingress record generation
   ##
-  enabled: true
+  enabled: false
 
   ## Set this to true in order to add the corresponding annotations for cert-manager
   ##
-  certManager: true
+  certManager: false
 
   ## Ingress annotations done as key:value pairs
   ## For a full list of possible ingress annotations, please see
