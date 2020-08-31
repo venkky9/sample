@@ -12,7 +12,7 @@ global:
 ref: https://hub.docker.com/repository/docker/madavi/samplewar/tags/
 image:
   registry: dockerhub
-  repository: newtomcat
+  repository: samplewar
   tag: latest
   ## Specify a imagePullPolicy
   ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
