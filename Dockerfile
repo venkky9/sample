@@ -2,6 +2,8 @@ FROM tomcat:8.0-alpine
 
 LABEL maintainer="madhavi.reddy0891@gmail.com"
 
+RUN apt install openjdk-8-jdk -y
+
 ADD sample.war /usr/local/tomcat/webapps/
 
 COPY tomcat-users.xml /usr/local/tomcat/conf/
