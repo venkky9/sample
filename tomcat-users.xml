@@ -34,7 +34,8 @@
   examples web application, do not forget to remove the <!.. ..> that surrounds
   them. You will also need to set the passwords to something appropriate.
 -->
-  <role rolename="manager-script"/>
+  <role rolename="tomcat"/>
   <role rolename="manager-gui"/>
-  <user username="tomcat" password="tomcat" roles="manager-script,manager-gui"/>
+  <user username="tomcat" password="tomcat" roles="tomcat"/>
+  <user username="tomcat" password="admin" roles="manager-gui"/>
 </tomcat-users>
