@@ -2,8 +2,6 @@ FROM tomcat:8.0-alpine
 
 LABEL maintainer="madhavi.reddy0891@gmail.com"
 
-RUN apt-get update && apt-get -y install default-jdk
-
 ADD sample.war /usr/local/tomcat/webapps/
 
 COPY tomcat-users.xml /usr/local/tomcat/conf/
