@@ -2,7 +2,9 @@ FROM tomcat:8.0-alpine
 
 LABEL maintainer="madhavi.reddy0891@gmail.com"
 
-RUN yum install openjdk-8-jdk -y
+RUN apt-get update && apt-get -y upgrade
+
+RUN apt-get -y install openjdk-8-jdk 
 
 RUN java -version
 
