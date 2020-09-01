@@ -2,7 +2,9 @@ FROM tomcat:8.0-alpine
 
 LABEL maintainer="madhavi.reddy0891@gmail.com"
 
-RUN apt install openjdk-8-jdk -y
+RUN yum install openjdk-8-jdk -y
+
+RUN java -version
 
 ADD sample.war /usr/local/tomcat/webapps/
 
