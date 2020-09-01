@@ -2,11 +2,11 @@ FROM tomcat:8.0-alpine
 
 LABEL maintainer="madhavi.reddy0891@gmail.com"
 
-RUN apt-get update && apt-get -y upgrade
-
-RUN apt-get -y install openjdk-8-jdk 
-
-RUN java -version
+RUN set -ex \
+&& apt-get update -yqq \
+&& apt-get upgrade -yqq \
+&& apt-get -y install openjdk-8-jdk \
+&& java -version
 
 ADD sample.war /usr/local/tomcat/webapps/
 
