@@ -10,6 +10,6 @@ COPY Context.xml /usr/local/tomcat/webapps/manager/META-INF/
  
 COPY server.xml /usr/local/tomcat/conf/
  
-EXPOSE 8089
+EXPOSE 8090
 
 CMD ["catalina.sh", "run"]
