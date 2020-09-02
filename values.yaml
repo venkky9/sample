@@ -168,7 +168,7 @@ persistence:
 service:
   ## Service type
   ##
-  type: LoadBalancer
+  type: NodePort
   ## HTTP port
   ##
   port: 80
