@@ -74,12 +74,12 @@ updateStrategy: RollingUpdate
 ## Admin user
 ## ref: https://github.com/bitnami/bitnami-docker-tomcat#creating-a-custom-user
 ##
-# tomcatUsername: user
+tomcatUsername: user
 
 ## Admin password
 ## ref: https://github.com/bitnami/bitnami-docker-tomcat#creating-a-custom-user
 ##
-# tomcatPassword: user
+# tomcatPassword:
 
 ## Expose management services
 ## ref: https://github.com/bitnami/charts/tree/master/bitnami/tomcat#configuration
@@ -140,7 +140,7 @@ resources:
 persistence:
   ## If true, use a Persistent Volume Claim, If false, use emptyDir
   ##
-  enabled: false
+  enabled: true
   ## Persistent Volume Storage Class
   ## If defined, storageClassName: <storageClass>
   ## If set to "-", storageClassName: "", which disables dynamic provisioning
@@ -168,7 +168,7 @@ persistence:
 service:
   ## Service type
   ##
-  type: NodePort
+  type: LoadBalancer
   ## HTTP port
   ##
   port: 80
