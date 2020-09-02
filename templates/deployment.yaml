@@ -68,7 +68,7 @@ spec:
               value: {{ .Values.tomcatAllowRemoteManagement | quote }}
           ports:
             - name: http
-              containerPort: 8080
+              containerPort: 8079
           livenessProbe:
             httpGet:
               path: /
