@@ -18,7 +18,7 @@ spec:
     annotations: {{- toYaml .Values.podAnnotations | nindent 8 }}
     {{- end }}
     spec:
-{{- include "tomcat.imagePullSecrets" . | nindent 6 }}
+{{- include "tomcat.imagePullSecrets" . | indent 6 }}
       {{- if .Values.affinity }}
       affinity: {{- include "tomcat.tplValue" (dict "value" .Values.affinity "context" $) | nindent 8 }}
       {{- end }}
@@ -73,9 +73,9 @@ spec:
             httpGet:
               path: /
               port: http
-            initialDelaySeconds: 2
-            timeoutSeconds: 2
-            failureThreshold: 1
+            initialDelaySeconds: 120
+            timeoutSeconds: 5
+            failureThreshold: 6
           readinessProbe:
             httpGet:
               path: /
