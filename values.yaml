@@ -13,8 +13,8 @@
 ##
 image:
   registry: docker.io
-  repository: bitnami/tomcat
-  tag: 9.0.37-debian-10-r31
+  repository: madavi/newtomcat1
+  tag: 10
   ## Specify a imagePullPolicy
   ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
   ## ref: http://kubernetes.io/docs/user-guide/images/#pre-pulling-images
@@ -155,20 +155,20 @@ persistence:
   ## Persistent Volume Access Mode
   ##
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany
   ## Persistent Volume size
   ##
   size: 8Gi
   ## Name of an existing PVC
   ##
-  existingClaim:
+  existingClaim: aws-pvc
 
 ## Service parameters
 ##
 service:
   ## Service type
   ##
-  type: LoadBalancer
+  type: NodePort
   ## HTTP port
   ##
   port: 80
